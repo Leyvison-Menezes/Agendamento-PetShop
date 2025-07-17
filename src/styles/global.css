@@ -11,6 +11,7 @@
     --content-secondary: #98959D;
     --content-tertiary: #666666;
     --content-brand: #9282FA;
+    --content-logo: #2E2C30;
 
     /* Background colors */
     --background-primary: #14151D;
@@ -38,8 +39,7 @@
     --label-md: 700 0.875rem/1.714 var(--ff-base);
     --label-sm: 700 0.75/1.333 var(--ff-base);
     --link: 500 0.75/1.333 var(--ff-base);
-}
 
-body{
-    background-color: var(--background-primary);
+    /* Proportions */
+    --atual-width: 24.375rem
 }
