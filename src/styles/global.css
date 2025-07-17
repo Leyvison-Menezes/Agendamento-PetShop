@@ -13,7 +13,7 @@
     --content-brand: #9282FA;
 
     /* Background colors */
-    --background-primary: #151515;
+    --background-primary: #14151D;
     --background-secondary: #1E1E1E;
     --background-tertiary: #23242C;
     --background-brand: #9282FA;
@@ -38,4 +38,8 @@
     --label-md: 700 0.875rem/1.714 var(--ff-base);
     --label-sm: 700 0.75/1.333 var(--ff-base);
     --link: 500 0.75/1.333 var(--ff-base);
+}
+
+body{
+    background-color: var(--background-primary);
 }
