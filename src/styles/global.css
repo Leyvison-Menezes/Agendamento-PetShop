@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 :root{
@@ -34,11 +37,12 @@
     /* Inter */
     --ff-base: "Inter", sans-serif;
     --pg-md: 500 0.875rem/1.714 var(--ff-base);
-    --pg-sm: 500 0.75/1.333 var(--ff-base);
+    --pg-sm: 500 0.75rem/1.333 var(--ff-base);
     --label-lg: 700 1rem/1.5 var(--ff-base);
     --label-md: 700 0.875rem/1.714 var(--ff-base);
     --label-sm: 700 0.75/1.333 var(--ff-base);
     --link: 500 0.75/1.333 var(--ff-base);
+    --label-calendar: 400 1rem/1.5 var(--ff-base);
 
     /* Proportions */
     --atual-width: 24.375rem

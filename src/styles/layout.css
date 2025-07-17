@@ -21,9 +21,6 @@ body{
         color: var(--content-brand);
     }
 }
-main{
-    
-}
 #agenda{
     flex-direction: column;
 
@@ -85,7 +82,7 @@ main{
         border: 2px solid var(--content-tertiary);
         border-radius: 0.75rem;
 
-        font: var(--label-lg);
+        font: var(--label-calendar);
         color: var(--content-secondary);
     }
 
