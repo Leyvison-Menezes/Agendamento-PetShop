@@ -21,6 +21,9 @@ body{
         color: var(--content-brand);
     }
 }
+main{
+    margin-bottom: 6rem;
+}
 #agenda{
     flex-direction: column;
 
@@ -92,4 +95,37 @@ body{
         -webkit-appearance: none;
         cursor: pointer;
     }
+}
+
+#to-schedule{
+    background-color: var(--background-tertiary-transparent);
+    width: var(--atual-width);
+    height: 5.25rem;
+
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    z-index: 1000;
+
+    top: 85%;
+    left: 0;
+
+    & div{
+        background-color: var(--background-brand);
+        padding: .75rem 1.5rem;
+        border-radius: .75rem;
+
+        box-shadow: 0 0 .5rem .1rem var(--background-brand);
+    }
+
+    & div:hover{
+        cursor: pointer;
+    }
+
+    & div strong{
+        font: var(--label-lg);
+        color: var(--content-black);
+    }
+    
 }

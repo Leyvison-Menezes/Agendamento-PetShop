@@ -15,11 +15,13 @@
     --content-tertiary: #666666;
     --content-brand: #9282FA;
     --content-logo: #2E2C30;
+    --content-black: #050505;
 
     /* Background colors */
     --background-primary: #14151D;
     --background-secondary: #1E1E1E;
     --background-tertiary: #23242C;
+    --background-tertiary-transparent: #23242Ccc;
     --background-brand: #9282FA;
     --background-highlights: #BDB4FA;
 
