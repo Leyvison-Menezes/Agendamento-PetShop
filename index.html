@@ -119,11 +119,58 @@
             </section>
         </section>
 
+        <!-- Botão que abre o overlay -->
         <div id="to-schedule" class="flex">
             <div>
                 <strong>NOVO AGENDAMENTO</strong>
             </div>
         </div>
+
+        <!-- Formulário overlay de novo agendamento -->
+         <div id="overlay" class="container flex column">
+
+            <div id="close-form">
+            </div>
+
+            <form id="schedule-form" action="#" method="post" class="flex column">
+                <div class="form-header">
+                    <h2>Agende um Atendimento</h2>
+                    <p>Preencha os dados do cliente para realizar o agendamento:</p>
+                </div>
+
+                <!-- Formulário -->
+                <div class="form-group icon-user">
+                    <strong>Nome do tutor</strong>
+                    <input type="text" name="ownerName" id="owner-name" placeholder="Helena Souza">
+                </div>
+                <div class="form-group icon-pet">
+                    <strong>Nome do pet</strong>
+                    <input type="text" name="petName" id="pet-name" placeholder="Cheddar">
+                </div>
+                <div class="form-group icon-phone">
+                    <strong>Telefone</strong>
+                    <input type="tel" name="contact" id="owner-contact" placeholder="(00) 0 0000-0000">
+                </div>
+                <div class="form-group">
+                    <strong>Descrição do serviço</strong>
+                    <input type="text" name="description" id="service-description" placeholder="Banho e tosa">
+                </div>
+                <div class="form-group icon-date">
+                    <strong>Data</strong>
+                    <input type="date" name="day" id="schedule-day">
+                </div>
+                <div class="form-group icon-time">
+                    <strong>Hora</strong>
+                    <input type="time" name="hour" id="schedule-hour">
+                </div>
+
+                <!-- Botão submit -->
+                <div id="submit-btn" class="form-action flex">
+                    <input type="submit" value="AGENDAR">
+                </div>
+            </form>
+
+         </div>
     </main>
 </body>
 </html>

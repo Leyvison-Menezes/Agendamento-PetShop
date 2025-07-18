@@ -98,6 +98,7 @@ main{
 }
 
 #to-schedule{
+    display: none;
     background-color: var(--background-tertiary-transparent);
     width: var(--atual-width);
     height: 5.25rem;
