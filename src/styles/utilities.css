@@ -1,5 +1,5 @@
 .container{
-    max-width: 21.875rem;
+    max-width: var(--atual-width);
     margin-inline: auto;
 }
 
@@ -9,6 +9,7 @@
     border-radius: 0.75rem;
 }
 
+/* No JS, utilizar o for para colocar borda em todos, exceto no último */
 .border-bottom{
     border-bottom: 1px solid var(--border-divisor);
 }

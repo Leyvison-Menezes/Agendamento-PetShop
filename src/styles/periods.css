@@ -56,3 +56,16 @@
         cursor: pointer;
     }
 }
+
+@media (min-width: 44.4375rem) {
+    #scheduled-pets{
+        max-width: 90%;
+    }
+    #scheduled-pet{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding-block: 1.5rem;
+    }
+}

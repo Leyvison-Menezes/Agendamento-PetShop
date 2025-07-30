@@ -62,3 +62,9 @@
   backdrop-filter: blur(2px);
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+@media (min-width: 44.4375rem) {
+  :root{
+    --atual-width: 54.4375rem;
+  }
+}

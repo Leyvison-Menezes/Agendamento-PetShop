@@ -129,3 +129,18 @@ main{
     }
     
 }
+
+@media (min-width: 44.4375rem) {
+  #agenda{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #to-schedule{
+    background-color: transparent;
+    left: 60%;
+    & div{
+        box-shadow: none;
+    }
+  }
+}
