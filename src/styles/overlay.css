@@ -1,8 +1,22 @@
+.no-scroll {
+  overflow: hidden;
+}
+
 #overlay{
-    width: 100%;
+
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
 
     background-color: var(--background-tertiary);
     border-radius: .75rem;
+    z-index: 9999;
 
     & .form-header{
         margin-bottom: 1.6rem;
@@ -29,7 +43,12 @@
     }
 }
 
+.hidden {
+  display: none;
+}
+
 #close-form{
+    position: absolute;
     width: 2.25rem;
     height: 2.25rem;
     
@@ -137,7 +156,7 @@
     height: 1.25rem;
 
     top: 2.3rem;
-    left: 17.5rem;
+    left: 16.5rem;
 
     background-image: url("../assets/icons/check-icon.svg");
     background-size: contain;
@@ -175,7 +194,7 @@
     height: 1.25rem;
 
     top: 2.3rem;
-    left: 17.5rem;
+    left: 16.5rem;
 
     background-image: url("../assets/icons/check-icon.svg");
     background-size: contain;

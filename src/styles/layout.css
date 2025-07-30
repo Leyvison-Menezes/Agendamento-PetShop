@@ -1,5 +1,6 @@
 body{
     background-color: var(--background-primary);
+    margin-inline: auto;
 
     max-width: var(--atual-width);
 }
@@ -98,7 +99,6 @@ main{
 }
 
 #to-schedule{
-    display: none;
     background-color: var(--background-tertiary-transparent);
     width: var(--atual-width);
     height: 5.25rem;
@@ -110,7 +110,6 @@ main{
     z-index: 1000;
 
     top: 85%;
-    left: 0;
 
     & div{
         background-color: var(--background-brand);
