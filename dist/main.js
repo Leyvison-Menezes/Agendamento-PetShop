@@ -277,7 +277,7 @@ eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var day
   \*********************************************/
 /***/ (() => {
 
-eval("{var body = document.body;\nvar blurDiv = document.getElementById(\"blur-div\");\nvar newSchedule = document.getElementById(\"to-schedule\");\nvar overlay = document.getElementById(\"overlay\");\nnewSchedule.addEventListener(\"click\", function (event) {\n  console.log(\"você clicou!\");\n});\n\n//# sourceURL=webpack://MundoPet/./src/scripts/form/open-close-form.js?\n}");
+eval("{var body = document.body;\nvar blurDiv = document.getElementById(\"blur-div\");\nvar newSchedule = document.getElementById(\"to-schedule\");\nvar overlay = document.getElementById(\"overlay\");\nvar closeForm = document.getElementById(\"close-form\");\nnewSchedule.addEventListener(\"click\", function () {\n  body.classList.add(\"no-scroll\");\n  overlay.classList.remove(\"hidden\");\n  blurDiv.classList.remove(\"hidden\");\n});\ncloseForm.addEventListener(\"click\", function () {\n  overlay.classList.add(\"hidden\");\n  body.classList.remove(\"no-scroll\");\n  blurDiv.classList.add(\"hidden\");\n});\n\n//# sourceURL=webpack://MundoPet/./src/scripts/form/open-close-form.js?\n}");
 
 /***/ }),
 
