@@ -1,23 +1,7 @@
 import dayjs from "dayjs";
 import { newSchedule } from "../api/new-schedule";
 
-// Variaveis referentes ao form
 const form = document.querySelector("form");
-const selectedDate = document.getElementById("daily-schedules");
-const selectedScheduleDate = document.getElementById("schedule-day");
-const currentTime = document.getElementById("schedule-hour");
-const today = dayjs(new Date()).format("YYYY-MM-DD");
-const time = dayjs().format("HH:mm");
-
-// Carrega a data atual e bloqueia anteriores
-selectedDate.value = today;
-selectedDate.min = today;
-
-// Carrega a data atual para o agendamento e bloqueia anteriores
-selectedScheduleDate.value = today;
-selectedScheduleDate.min = today;
-
-currentTime.value = time;
 
 form.onsubmit = async(event) =>{
     event.preventDefault();

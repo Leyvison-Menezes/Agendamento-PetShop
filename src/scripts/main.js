@@ -13,3 +13,4 @@ import "../styles/utilities.css"
 // JS
 import "../scripts/form/submit.js"
 import "../scripts/form/open-close-form.js"
+import "../scripts/form/load-schedules.js"
