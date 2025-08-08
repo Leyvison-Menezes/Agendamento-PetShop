@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import { fetchSchedules } from "../api/fetch-schedules";
+import { showSchedules } from "../api/show-schedules";
 
 // Variaveis referentes ao form
 const form = document.querySelector("form");
@@ -26,6 +27,9 @@ export async function daySchedules() {
 
     const allSchedules = await fetchSchedules({ date })
     console.log(allSchedules)
+
+    // Exibe os agendamentos
+    showSchedules({allSchedules})
 }
 
 selectedDate.addEventListener("change", daySchedules);

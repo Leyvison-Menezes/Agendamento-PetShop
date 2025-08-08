@@ -20,9 +20,11 @@ form.onsubmit = async(event) =>{
             return alert("Há items a serem preenchidos!")
         }
 
-        await newSchedule({id, tutorName, petName, phoneNumber, service, date, hour})
+        const when = dayjs(`${date}T${hour}`)
+
+        await newSchedule({id, tutorName, petName, phoneNumber, service, when})
         
-        // console.log({id, tutorName, petName, phoneNumber, service, date, hour})
+        // console.log({id, tutorName, petName, phoneNumber, service, when})
 
     } catch (error) {
         console.log(error)
