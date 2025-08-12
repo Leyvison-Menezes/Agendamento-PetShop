@@ -10,7 +10,7 @@ export async function fetchSchedules({ date }) {
         const scheduleDay = data.filter((schedule) => dayjs(date).isSame(schedule.when, "day"))
         // const scheduleHour = data.filter((schedule) => dayjs(hour).isSame(schedule.hour, "hour"))
 
-        alert("Carregamento realizado com sucesso!")
+        // alert("Carregamento realizado com sucesso!")
         return scheduleDay
 
     } catch (error) {

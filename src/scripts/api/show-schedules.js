@@ -31,6 +31,7 @@ export function showSchedules ({ allSchedules }){
             service.setAttribute("id", "service-description")
 
             // Setando os elementos
+            div.dataset.id = schedule.id
             scheduledInfos.textContent = dayjs(schedule.when).format("HH:mm") + " " + schedule.petName
             ownerName.textContent = " / " + schedule.tutorName
             service.textContent = schedule.service
@@ -50,9 +51,7 @@ export function showSchedules ({ allSchedules }){
                 night.appendChild(div)
             }
 
-            // Preciso agora: organizar a lista em ordem de horário
             // Remover agendamentos
-            // 
         })
 
         // Mostra a quantidade de agendamentos em cada período

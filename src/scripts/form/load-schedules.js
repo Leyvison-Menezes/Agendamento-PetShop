@@ -26,7 +26,7 @@ export async function daySchedules() {
     const date = selectedDate.value
 
     const allSchedules = await fetchSchedules({ date })
-    console.log(allSchedules)
+    // console.log(allSchedules)
 
     // Exibe os agendamentos
     showSchedules({allSchedules})
