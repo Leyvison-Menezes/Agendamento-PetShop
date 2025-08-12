@@ -53,8 +53,29 @@ export function showSchedules ({ allSchedules }){
             // Preciso agora: organizar a lista em ordem de horário
             // Remover agendamentos
             // 
-
         })
+
+        // Mostra a quantidade de agendamentos em cada período
+        const morningChildrens = morning.children.length
+        const afternoonChildrens = afternoon.children.length
+        const nightChildrens = night.children.length
+
+        // Adiciona border-bottom em todos, exceto o último, desde que tenha mais de 1 agendamento
+        if(morningChildrens > 1){
+            for(let i = 0; i < morningChildrens - 1; i++){
+                morning.children[i].classList.add("border-bottom")
+            }
+        }
+        if(afternoonChildrens > 1){
+            for(let i = 0; i < afternoonChildrens - 1; i++){
+                afternoon.children[i].classList.add("border-bottom")
+            }
+        }
+        if(nightChildrens > 1){
+            for(let i = 0; i < nightChildrens - 1; i++){
+                night.children[i].classList.add("border-bottom")
+            }
+        }
     } catch (error) {
         alert("Não foi possível exibir os agendamentos")
         console.log(error)
