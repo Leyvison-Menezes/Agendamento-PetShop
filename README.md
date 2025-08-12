@@ -48,6 +48,14 @@ scripts/
 ```
 
 ---
+📷 Demonstração
+
+
+
+https://github.com/user-attachments/assets/84d323ad-75ec-4fe7-bdaa-e41ef078a24a
+
+
+---
 
 ## 🚀 Como executar
 
@@ -56,12 +64,15 @@ scripts/
    git clone https://github.com/Leyvison-Menezes/Agendamento-PetShop.git
 
 2. Instale o JSON-server (caso não tenha):
+   ```
    npm install -g json-server
 
-3. Inicie a API Fake:
+4. Inicie a API Fake:
+   ```
    npm run server
 
-4. Rode o Projeto:
+6. Rode o Projeto:
+   ```
    npm run dev
 
 📄 Licença
